@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge ONE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="titulo">código secreto</h1>
+  <main class="main">
+	<section class="form box">
+      <form action="">
+		<textarea class="ingreso" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui" onkeypress="return soloLetras(event)"></textarea>
+		<div class="contenedor_aclaracion">
+			<img src="Vector.png">
+			<label class="aclaracion"><b>Solo letras minúsculas, sin acento</b></label>
+		</div>
+        <br>
+		<div class="contenedor_botones">
+			<input class="btn_izq" type="button" value="encriptar!" id="btn-encriptar">
+			<input class="btn_der" type="button" value="desencriptar!" id="btn-desencriptar">
+		</div>
+      </form>
+    </section>
+    <section class="form msg">
+		<textarea class="salida" name="output-texto" id="output-texto"></textarea>
+		<div class="contenedor_salida">	
+			<input class="btn" type="button" value="copiar" id="btn-copy">
+		</div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
